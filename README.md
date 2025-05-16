@@ -55,10 +55,23 @@ The dataset is available in WebDataset format on Huggingface:
 - [GlobalGeoTree-6M](https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/GlobalGeoTree-6M)
 - [GlobalGeoTree-10kEval](https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/GlobalGeoTree-10kEval)
 
+### GlobalGeoTree file
+
+- [GlobalGeoTree.csv](https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/files)
+
+- Complete sample information containing:
+  - Sample ID
+  - Taxonomic information (Family, Genus, Species)
+  - Geographic location (latitude, longitude)
+  - Source and year of observation
+  - Location description
+
 ### Model Checkpoints
 
 The pretrained model checkpoint is available at:
-- [GeoTreeCLIP-6M](https://huggingface.co/datasets/yann111/GlobalGeoTree/resolve/main/checkpoints/GGT_6M.pth)
+- [GGT_6M.pth](https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/checkpoints)
+
+This checkpoint was trained on the GlobalGeoTree-6M dataset for 25 epochs.
 
 Download the checkpoint:
 ```bash
@@ -66,7 +79,7 @@ Download the checkpoint:
 mkdir -p checkpoints
 
 # Download the checkpoint
-wget https://huggingface.co/datasets/yann111/GlobalGeoTree/resolve/main/checkpoints/GGT_6M.pth -O checkpoints/GGT_6M.pth
+wget https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/checkpoints/GGT_6M.pth -O checkpoints/GGT_6M.pth
 ```
 
 ### Using the Model
@@ -136,7 +149,9 @@ python train.py \
 2. **Alternative: Download to local storage**
 ```bash
 # First download the dataset
-wget https://huggingface.co/datasets/yann111/GlobalGeoTree/resolve/main/GlobalGeoTree-6M.tar -O data/GlobalGeoTree-6M.tar
+mkdir -p data/GlobalGeoTree-6M
+# Download all tar files from GlobalGeoTree-6M directory
+You can find all training files at: https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/GlobalGeoTree-6M
 
 # Then train using local data
 python train.py \
@@ -155,10 +170,12 @@ Check `train.py` for more detailed configuration options.
 
 ## Evaluation Benchmarks
 
-Three evaluation sets are provided:
+Three evaluation sets are provided in the [GlobalGeoTree-10kEval](https://huggingface.co/datasets/yann111/GlobalGeoTree/tree/main/GlobalGeoTree-10kEval) directory:
 - **GlobalGeoTree-10kEval**: 90 species (30 each from Rare, Common, and Frequent categories)
 - **GlobalGeoTree-10kEval-300**: 300 species (100 each)
 - **GlobalGeoTree-10kEval-900**: 900 species (300 each)
+
+For detailed evaluation code and metrics calculation, please refer to [eval/geotreeclip.py](GeoTreeCLIP/eval/geotreeclip.py).
 
 <!-- ## Citation
 

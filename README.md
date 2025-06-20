@@ -177,18 +177,18 @@ Three evaluation sets are provided in the [GlobalGeoTree-10kEval](https://huggin
 
 For detailed evaluation code and metrics calculation, please refer to [eval/geotreeclip.py](GeoTreeCLIP/eval/geotreeclip.py).
 
-<!-- ## Citation
+## Citation
 
-If you use GlobalGeoTree in your research, please cite our paper: -->
+If you find GlobalGeoTree helpful in your research, please cite our paper:
 
-<!-- ```bibtex
-@inproceedings{mu2025globalgeotree,
+```bibtex
+@article{mu2025globalgeotree,
   title={GlobalGeoTree: A Multi-Granular Vision-Language Dataset for Global Tree Species Classification},
   author={Mu, Yang and Xiong, Zhitong and Wang, Yi and Shahzad, Muhammad and Essl, Franz and van Kleunen, Mark and Zhu, Xiao Xiang},
-  booktitle={Advances in Neural Information Processing Systems},
+  journal={arXiv preprint arXiv:2505.12513},
   year={2025}
 }
-``` -->
+```
 
 ## License
 

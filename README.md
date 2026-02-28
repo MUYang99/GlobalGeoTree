@@ -182,14 +182,19 @@ For detailed evaluation code and metrics calculation, please refer to [eval/geot
 If you find GlobalGeoTree helpful in your research, please cite our paper:
 
 ```bibtex
-@article{mu2025globalgeotree,
-  title={GlobalGeoTree: A Multi-Granular Vision-Language Dataset for Global Tree Species Classification},
-  author={Mu, Yang and Xiong, Zhitong and Wang, Yi and Shahzad, Muhammad and Essl, Franz and van Kleunen, Mark and Zhu, Xiao Xiang},
-  journal={arXiv preprint arXiv:2505.12513},
-  year={2025}
+@article{mu2026globalgeotree,
+  title={GlobalGeoTree: a multi-granular vision-language dataset for global tree species classification},
+  author={Mu, Yang and Xiong, Zhitong and Wang, Yi and Shahzad, Muhammad and Essl, Franz and Kreft, Holger and van Kleunen, Mark and Zhu, Xiao Xiang},
+  journal={Earth System Science Data},
+  volume={18},
+  number={2},
+  pages={1379--1403},
+  year={2026},
+  publisher={Copernicus Publications G{\"o}ttingen, Germany}
 }
 ```
 
 ## License
 
 This project is licensed under the Apache License 2.0.
+
